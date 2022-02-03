@@ -1,29 +1,30 @@
+/* universal selector */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* applies background color to the body element */
 body {
     background-color: #d9dcd6;
 }
-
+/* header element selector, background color, font family, text color and padding */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* header element inline block with a font size of 48px */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* selecting all ".seo" classes within h1 element and changing the text color */
 header h1 .seo {
     color: #d9dcd6;
 }
-
+/* adjustments for the nav header (font size, font family, where it sits, along with margin and padding */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,11 +32,11 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* list items in header nav list style, currently set at none */
 header nav ul {
     list-style-type: none;
 }
-
+/* list items in header nav list display type along with margin */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
@@ -49,7 +50,7 @@ a {
 p {
     font-size: 16px;
 }
-
+/* hero class selector adjusting height, width, margin, images, how the background is set and covered */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,23 +59,26 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* fload left class selector, apllying float left property */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* fload right class selector, apllying float left property */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-/* .content {
+/* applies styling to main element adjusting the max width of the container, how those containers sit and andy margin */
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
-} */
+    
+} 
 
+/* applies styling to benefits element margin, padding, font family bg color and how the container sits on the page */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,12 +89,13 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benifit {
-    
+.benefit{
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.benefit-lead {
+/* *conslidated to above*
+ .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -102,17 +107,19 @@ p {
 
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
-}
+    color: #ffffff; */
 
+/* benefit h3 tag style  */
 .benefit h3 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
-
+/* benfit img styling */
 .benefit img {
     margin-bottom: 10px;
-    text-align: center;
+    max-height: 200px;
+    display: block;
+    margin: auto;
 }
 
 .benefit-cost h3 {
@@ -121,13 +128,14 @@ p {
 }
 
 .benefit-lead img {
+    text-align: center;
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
 .benefit-brand img {
-    display: block;
+    display: blockin;
     margin: 10px auto;
     max-width: 150px;
 }
@@ -139,6 +147,7 @@ p {
 }
 
 .search-engine-optimization {
+
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -148,6 +157,7 @@ p {
 }
 
 .online-reputation-management {
+
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -157,6 +167,7 @@ p {
 }
 
 .social-media-marketing {
+    
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
